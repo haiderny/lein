@@ -12,3 +12,7 @@ describe file('/usr/local/bin/lein') do
    it { should contain 'export LEIN_VERSION="2.7.1"' }
 
 end
+
+describe file('/root/.lein/self-installs/leiningen-2.7.1-standalone.jar') do
+  it { should exist }
+end
