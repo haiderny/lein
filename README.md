@@ -11,7 +11,15 @@ A JDK must be pre-installed. This role only installs Leiningen.
 Role Variables
 --------------
 
-    lein_version: 2.7.1
+Leiningen version to be installed.
+```
+lein_version: 2.7.1
+```
+
+Pre-installs leiningen on this user home directory.    
+```
+lein_user: root
+```        
 
 Dependencies
 ------------
