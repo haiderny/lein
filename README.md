@@ -23,7 +23,7 @@ Example Playbook
 
 - hosts: servers
       roles:
-         - { role: rfhayashi.lein }
+         - { role: yashible.lein }
 
 License
 -------
