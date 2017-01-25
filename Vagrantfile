@@ -16,11 +16,11 @@ Vagrant.configure('2') do |config|
   subnet = "#{base_ip}.#{config.user.network.subnet_number}"
   config.vm.network "private_network", ip: "#{subnet}.10"
 
-  config.vm.synced_folder '.', '/ansible-lein'
+  config.vm.synced_folder '.', '/lein'
 
   config.vm.provision 'ansible_local' do |a|
     a.sudo = true
-    a.provisioning_path = '/ansible-lein'
+    a.provisioning_path = '/lein'
     a.playbook = 'vagrant.yml'
     a.galaxy_role_file = 'requirements.yml'
     a.verbose = 'vv'
